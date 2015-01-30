@@ -1,0 +1,62 @@
+@media (max-width: @screen-xs) {
+    body{font-size: 10	px;}
+}
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+@media (max-width: @screen-md) {
+    body{font-size: 18px;}
+}
+@media (max-width: @screen-lg) {
+    body{font-size: 20px;}
+}
+div#body h1,div h1{
+	font-size: 2em;
+}
+div#body h2,div h2{
+	font-size:1.8em;
+}
+div#body h3, div h3{
+	font-size:1.6em;
+}
+div#body h4, div h4, h4{
+	font-size:1.2em;
+}
+
+div#body{
+	text-align:left;
+}
+.mainBody{
+	width:90%;
+	margin:auto;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.blockList li{
+	display:block;
+}
+.mainBody{
+	margin-top:75px;
+}
+body{
+	background-color:WHITE !important;
+}
+
+.errorMsg{
+	color:#ff0033;
+}
+.hide{
+	display:none;
+}
+form textarea{
+	width:100%;
+}
+.container-fluid{
+text-align:left;
+}
+.hideRow{
+	display:none;
+}

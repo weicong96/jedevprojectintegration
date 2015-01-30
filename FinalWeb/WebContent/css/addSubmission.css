@@ -1,0 +1,18 @@
+*{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+label{
+	display:block;
+}
+textarea{
+	width:85%;
+}
+h1{
+	font-size:1.5em;
+}
+div#body input, div#body textarea{
+	margin:10px 0px;
+}
+div#body{
+	min-height:350px;
+}

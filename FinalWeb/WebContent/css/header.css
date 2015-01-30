@@ -1,0 +1,61 @@
+			#floatingNav{
+				width:100%;
+			}
+			#floatingNav{
+				position:fixed;
+				top:0;
+				text-align:center;
+				z-index:33;
+			}
+			
+			#floatingNav ul{
+				list-style:none;
+				display:inline-block;
+				padding:0px 15px;
+				margin:0px;
+			}
+			/*Apply to all navigation list elements*/
+			nav ul li{
+				display:inline-block;
+				color:#F50C79;
+				font-family : "Helvetica Neue",Helvetica,Arial,sans-serif;
+				
+				font-size : 1.1em;
+				padding:13px;
+			}
+			
+			/*Apply to all navigation list elements*/
+			nav ul li:hover{
+				color:blue;
+			}	
+			/*floating navigation is basically a table with a single row and table cells with different widths*/
+			nav table{
+				width:100%;
+				background-color:white;
+			}
+			/*Middle set of list .nav is the table cell*/
+			nav .nav{
+				text-align:left;
+			}
+			/*This is the idotcode wording at the left of page*/
+			nav .navLeft{
+				color:#000080;
+				width:10%;
+				text-align:center;
+				font-size:1.2em;
+				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+			}
+			nav .navRight{
+				width:20%;
+				text-align:right;
+			}
+			
+			/*
+			Banner for every page
+			*/
+			nav.menu{
+				margin:auto;
+				padding:0px;
+				background-color:#ffcccc;
+				text-align:center;
+			}

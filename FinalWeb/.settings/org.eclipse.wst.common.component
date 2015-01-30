@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FinalWeb">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="gson-2.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Wei Cong/Desktop/School Sem4/JEDEV/gson-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="FinalWeb"/>
+        <property name="java-output-path" value="/FinalWeb/WebContent/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

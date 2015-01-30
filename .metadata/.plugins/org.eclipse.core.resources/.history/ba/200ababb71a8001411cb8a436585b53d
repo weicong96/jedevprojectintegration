@@ -1,0 +1,196 @@
+package database;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import bean.Registration;
+import bean.School;
+
+
+public class ReportManager {
+	
+	public static String url = "jdbc:mysql://mysql30495-env-3560749.whelastic.net:3306/enterpriseprojectlaptop";
+	public static String dbdriver = "com.mysql.jdbc.Driver";
+	public static String username = "project";
+	public static String password = "root";
+	
+	private static final String DB_USER_NAME = "project";
+	private static final String DB_PASSWORD = "root";
+	private String sql;
+
+	private Connection getConnection() throws IllegalAccessException,
+			InstantiationException, ClassNotFoundException, SQLException {
+		// Instantiate a new instance of the driver
+		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		// Get a connection from the driver
+		// Note the connection string
+		return DriverManager.getConnection(
+				"jdbc:mysql://mysql30495-env-3560749.whelastic.net:3306/enterpriseprojectlaptop", DB_USER_NAME,
+				DB_PASSWORD);
+	}
+	
+	public School[] getAllSchools() {
+		// SQL Statement
+		String sql = "Select schName from school";
+
+		// Create an array list for our school Java Beans
+		ArrayList<School> schools = new ArrayList<School>();
+
+		try {
+			Connection conn = getConnection();
+			// Use the connection to create a PreparedStatement object
+			PreparedStatement ps = conn.prepareStatement(sql);
+			// Execute the SQL prepared statement to retrieve the records
+			// The records are returned as a ResultSet
+			ResultSet rs = ps.executeQuery();
+			// Iterates through each record of the result set
+			while (rs.next()) {
+				// Each record will be changed into a Java bean
+				// rs.getXXX() methods retrieve a value from
+				// a column in the current record
+				School skl = new School();
+				skl.setSchoolName(rs.getString("schName"));
+
+				// Each Java bean is then added to the array list "products"
+				schools.add(skl);
+				System.out.println("!!!!!!!!!" + (skl.getSchoolName()));
+			}
+			// Return the array list as a product array (Product[])
+			return schools.toArray(new School[schools.size()]);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+
+	}
+
+	public ArrayList<Object> getListOfParticipants(String schoolName) {
+		// SQL Statement
+				
+	
+					sql = "SELECT p.teamMember, p.tic, s.schName FROM participant p Inner Join school s on p.schCode = s.schCode where schName LIKE '%" +schoolName+ "%'";
+				
+		
+		// Create an array list for our participants with schoolName Java beans
+		ArrayList<Object> participants = new ArrayList<Object>();
+
+		try {
+
+			Connection conn = getConnection();
+
+			// Use the connection to create a PreparedStatement object
+			PreparedStatement ps = conn.prepareStatement(sql);
+
+			// Execute the SQL prepared statement to retrieve the records
+			// The records are returned as a ResultSet
+			ResultSet rs = ps.executeQuery();
+
+			// Iterates through each record of the result set
+			while (rs.next()) {
+				// Each record will be changed into a Java bean
+				// rs.getXXX() methods retrieve a value from
+				// a column in the current record
+
+				Registration r1 = new Registration();
+				School s1 = new School();
+
+				System.out.println("rs.getRow is : " + rs.getRow());
+
+				for (int i = 0; i < 1; i++) {
+
+					Object[] arr = new Object[2];
+
+					r1.setMemberName(rs.getString("teamMember"));
+					r1.setTic(rs.getString("tic"));
+					s1.setSchoolName(rs.getString("schName"));
+
+					// Each Java bean is then added to the array list "products"
+
+					arr[0] = r1;
+					arr[1] = s1;
+					System.out.println(arr[0]);
+					participants.add(arr);
+				
+				}
+				
+
+			}
+			
+
+			// Return the array list as a product array (Product[])
+			return participants;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+		
+		public ArrayList<Object> getListOfNonSpecificParticipants() {
+			// SQL Statement
+					
+			
+			sql = "SELECT p.teamMember, p.tic, s.schName FROM participant p Inner Join school s on p.schCode = s.schCode";
+			
+			// Create an array list for our participants with schoolName Java beans
+			ArrayList<Object> participants = new ArrayList<Object>();
+
+			try {
+
+				Connection conn = getConnection();
+
+				// Use the connection to create a PreparedStatement object
+				PreparedStatement ps = conn.prepareStatement(sql);
+
+				// Execute the SQL prepared statement to retrieve the records
+				// The records are returned as a ResultSet
+				ResultSet rs = ps.executeQuery();
+
+				// Iterates through each record of the result set
+				while (rs.next()) {
+					// Each record will be changed into a Java bean
+					// rs.getXXX() methods retrieve a value from
+					// a column in the current record
+
+
+					
+					Registration r1 = new Registration();
+					School s1 = new School();
+
+					System.out.println("rs.getRow is : " + rs.getRow());
+
+					for (int i = 0; i < 1; i++) {
+
+			
+						
+						Object[] arr = new Object[2];
+
+						r1.setMemberName(rs.getString("teamMember"));
+						r1.setTic(rs.getString("tic"));
+						s1.setSchoolName(rs.getString("schName"));
+
+						// Each Java bean is then added to the array list "products"
+
+						arr[0] = r1;
+						arr[1] = s1;
+						System.out.println(arr[0]);
+						participants.add(arr);
+					}
+					
+
+				}
+				
+
+				// Return the array list as a product array (Product[])
+				return participants;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return null;
+			}
+
+	}
+
+}

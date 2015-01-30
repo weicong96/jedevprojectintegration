@@ -1,0 +1,76 @@
+	
+			body{
+				position:relative;
+				top:50px;
+				z-index:1;
+				padding:0px;
+				margin:0px;
+			}
+		
+			div#body{
+				width:100%;
+				padding:none;
+				margin:auto;
+			}
+			ul,ul li{
+				padding:0px;
+				margin:0px;
+			}
+			/*
+			Navigation starts here
+				.navLeft refers to td with icon
+				.nav refers to td with middle navigation links
+				.navRight refers to td with Login and SignUp
+			*/
+			
+			/*
+			Header for main page
+				div#body is the the root element
+			*/
+			div#header{
+				font-size:1em;
+				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+			}
+			div#body div#header {
+				text-align:center;
+				background-color:#ffcccc;
+			}
+			div#body div#header span{
+				font-size:1.2em;
+			}
+			
+			div#body{
+				background-color:white;
+				margin:0px;
+				padding:0px;	
+			}
+			div#body div#header img{
+				width:12%;
+				margin:2% 0px 0.5% 0px;
+			}
+			div#body span{
+				font-size:0.8em;
+			}
+			
+			@font-face {
+font-family: 'Helvetica Neueu';
+src: url('fonts/helvetica-neue-medium-1361522099-webfont.eot');
+src: url('fonts/helvetica-neue-medium-1361522099-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('fonts/helvetica-neue-medium-1361522099-webfont.woff') format('woff'),
+	 url('fonts/helvetica-neue-medium-1361522099-webfont.ttf') format('truetype'),
+	 url('fonts/helvetica-neue-medium-1361522099-webfont.svg#helvetica-neue-medium-1361522099-webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'PtSans';
+src: url('fonts/pt_sans-web-regular-webfont.eot');
+src: url('fonts/pt_sans-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('fonts/pt_sans-web-regular-webfont.woff') format('woff'),
+	 url('fonts/pt_sans-web-regular-webfont.ttf') format('truetype'),
+	 url('fonts/pt_sans-web-regular-webfont.svg#pt_sans-web-regular-webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+		

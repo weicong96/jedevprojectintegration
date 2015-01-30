@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.jst.j2ee.commonarchivecore.looseconfig:LooseArchive xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.jst.j2ee.commonarchivecore.looseconfig="commonarchive.looseconfig.xmi" uri="C:\Users\Wei Cong\IBM\rationalsdp\integrate\Final" binariesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\Final" resourcesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\Final" archiveType="EAR">
+  <looseChildren uri="FinalWeb.war" binariesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalWeb\WebContent" resourcesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalWeb\WebContent" archiveType="WAR">
+    <looseChildren uri="WEB-INF/lib/gson-2.3.jar" binariesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\gson-2.3.jar" resourcesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\gson-2.3.jar" archiveType="SIMPLEJAR"/>
+  </looseChildren>
+  <looseChildren uri="FinalEJB.jar" binariesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalEJB\build\classes" resourcesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalEJB\build\classes" archiveType="EJBJAR"/>
+  <looseChildren uri="lib/FinalJPA.jar" binariesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalJPA\build\classes" resourcesPath="C:\Users\Wei Cong\IBM\rationalsdp\integrate\FinalJPA\build\classes" archiveType="SIMPLEJAR"/>
+  <looseChildren uri="lib/mysql-connector-java-5.1.33-bin.jar" binariesPath="C:\Users\Wei Cong\Desktop\project\mysql-connector-java-5.1.33\mysql-connector-java-5.1.33-bin.jar" resourcesPath="C:\Users\Wei Cong\Desktop\project\mysql-connector-java-5.1.33\mysql-connector-java-5.1.33-bin.jar" archiveType="SIMPLEJAR"/>
+  <looseChildren uri="lib/commons-fileupload-1.3.1.jar" binariesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\commons-fileupload-1.3.1.jar" resourcesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\commons-fileupload-1.3.1.jar" archiveType="SIMPLEJAR"/>
+  <looseChildren uri="lib/commons-io-2.4.jar" binariesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\commons-io-2.4.jar" resourcesPath="C:\Users\Wei Cong\Desktop\School Sem4\JEDEV\commons-io-2.4.jar" archiveType="SIMPLEJAR"/>
+</org.eclipse.jst.j2ee.commonarchivecore.looseconfig:LooseArchive>

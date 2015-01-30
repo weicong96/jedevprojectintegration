@@ -1,0 +1,25 @@
+/*ul#pages{
+	display:inline-block;
+}
+#pagesFooting{
+	width:100%;
+	text-align:center;
+}
+ul#pages li{
+	display:inline-block;
+}
+ul#schoolLetter {
+	text-indent: 20px;
+}
+ul#schoolLetter li{
+	list-style-type:none;
+}
+*/
+@media (max-width: @screen-xs) {
+    body{font-size: 10	px;}
+
+ 	.submissioninfo div{
+ 		text-align:center;
+ 		margin:auto;
+ 	}   
+}

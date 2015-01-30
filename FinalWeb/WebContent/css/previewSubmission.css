@@ -1,0 +1,19 @@
+div#body img{
+	display:inline-block;
+	margin:5px;
+}
+div#body{
+	margin-bottom:40px;
+}
+div#body div#video,div#body div#slides{
+	width:100%;
+	text-align:center;
+}
+div#body div#video img,div#body div#slides img{
+	padding:0px;
+	margin:auto;
+}
+div#body div#screenshots img{
+	margin:10px;
+	display:inline-block;
+}
